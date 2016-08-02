@@ -7,7 +7,7 @@
 USER_ID=${LOCAL_USER_ID:-9001}
 
 echo "Starting with UID : $USER_ID"
-useradd --shell /bin/bash -u $USER_ID -o -c "" -m user
+useradd --shell /bin/bash -u $USER_ID -o -c "" -m dev
 export HOME=/home/dev
 
 exec /usr/local/bin/gosu dev "$@"

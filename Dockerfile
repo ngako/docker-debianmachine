@@ -1,5 +1,5 @@
 FROM debian:latest
-MAINTAINER laurent NGAKO
+MAINTAINER laurent NGAKO <laurent.ngako@gmail.com>
 ENV GOSU_VERSION 1.9
 RUN set -x \
     && apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* \
